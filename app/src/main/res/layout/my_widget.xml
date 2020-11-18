@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_open_app"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/panic_btn_icon"></Button>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_open_app"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_weight="0.8"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:text="Open App"></Button>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="1dp"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        ></LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_weight="1"></LinearLayout>-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="last update"-->
+    <!--        android:textSize="9dp"></TextView>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/last_update"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="15dp"></TextView>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="1dp"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        ></LinearLayout>-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/image_widget"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_weight="0.8"></ImageView>-->
+
+</LinearLayout>

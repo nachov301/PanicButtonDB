@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Panic button</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menutitle_addTask">Add Task</string>
+    <string name="menumain_showDurations">Durations Report</string>
+    <string name="menumain_settings">Settings</string>
+    <string name="menumain_showAbout">About TaskTimer</string>
+    <string name="menumain_generate">Generate Data</string>
+    <string name="no_task_message">No Task Selected</string>
+    <string name="edit_button_description">Button to edit contact details</string>
+    <string name="delete_button_description">Button to delete contact</string>
+    <string name="addedit_name_hint">Contact Name: required</string>
+    <string name="addedit_description_hint">Contact phone number</string>
+    <string name="addedit_sort_hint">Order: sorts low to high</string>
+    <string name="addedit_save_hint">Save</string>
+    <string name="title_activity_add_edit">Panic button</string>
+    <string name="instructions_heading">Instructions</string>
+    <string name="instructions">Use the add button (+) in the toolbar above to create a new contact.  Contacts with lower sort order will be placed higher up in the list, Contacts with the same sort order will be sorted alphabetically.  Each contact has Edit and Delete buttons if you want to change the details or want to delete the contact</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="deldiag_positive_caption">Delete</string>
+    <string name="deldiag_message">Delete contact id %1$d: %2$s. ?</string>
+    <string name="cancelEditDiag_message">You have unsaved changes. Do you want to abandon your changes or continue editing?</string>
+    <string name="cancelEditDiag_positive_caption">Continue editing</string>
+    <string name="cancelEditDiag_negative_caption">Abandon changes</string>
+    <string name="about_copyright" translatable="false">Copyright \u00a9 Programming.academy</string>
+    <string name="title_activity_main2">Panic button</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_main3">Panic button</string>
+    <string name="add_from_contacts">Add contacts</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_load">Load</string>
+    <string name="enter_message">Enter your message</string>
+    <string name="enter_number">Enter your number</string>
+    <string name="btn_red">Push</string>
+    <string name="btn_config">Config</string>
+    <string name="title_activity_widget">WidgetActivity</string>
+    <string name="diag_message">For using this app you need to enable your GPS, do you want to enable it now?</string>
+    <string name="diag_settings">Go to settings</string>
+    <string name="address">Address</string>
+    <string name="country_name">Country name</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="save">Save</string>
+    <string name="contacts_added">Contacts added</string>
+    <string name="successfully_saved">Data successfully saved</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="latitude2">Latidude:</string>
+    <string name="longitude2">Longitude:</string>
+    <string name="countryName2">Country name:</string>
+    <string name="address2">Address:</string>
+    <string name="LocationEnabled">location is enabled</string>
+    <string name="LocationDisabled">location is disabled, it needs to be enabled for this app</string>
+    <string name="Number">Message sent to: </string>
+    <string name="Error">There was an error</string>
+    <string name="enableLocation">Enable location and try again :(</string>
+    <string name="title_activity_config">Settings</string>
+    <string name="title_activity_my_widget" translatable="false">MyWidget</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="stop">Stop</string>
+    <string name="no_contacts">You haven\'t added any contacts yet</string>
+    <string name="toast_number">\"Number: \"</string>
+    <string name="toast_latitude">\" Latitude: \"</string>
+    <string name="toast_longitude">\" Longitude: \"</string>
+    <string name="toast_address">\" Address: \"</string>
+    <string name="toast_country">\"Country: \"</string>
+    <string name="my_contacts">My contacts</string>
+    <string name="a">\"Longitud: \"</string>
+</resources>

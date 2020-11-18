@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="app.iggy.panicbutton.Main2Activity">
+    <item
+        android:id="@+id/menumain2_pref"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="100"
+        android:title="@string/menutitle_addTask"
+        app:showAsAction="ifRoom" />
+</menu>
