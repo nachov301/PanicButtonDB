@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
+import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -221,7 +222,7 @@ public class Main2Activity extends AppCompatActivity implements AppDialog.Dialog
         @Override
         public void run() {
             getCurrentLocation();
-            mHandler.postDelayed(this, 10000);
+            mHandler.postDelayed(this, 60000);
         }
     };
 
@@ -421,8 +422,8 @@ public class Main2Activity extends AppCompatActivity implements AppDialog.Dialog
 if ((contacts!=null) && (contacts.size()>0)){
     for (int i = 0; i < contacts.size(); i++) {
 //            Toast.makeText(this, "Number: " + contacts.get(i), Toast.LENGTH_LONG).show();
-//            SmsManager smsManager = SmsManager.getDefault();
-//            smsManager.sendTextMessage(contacts.get(i), null, text + "\nLatitud: " + latitude + "\nLongitud: " + longitude + "\nDireccion: " + address + "Pais: " + countryName, null, null);
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage(contacts.get(i), null, text + "\nLatitud: " + latitude + "\nLongitud: " + longitude + "\nDireccion: " + address + "Pais: " + countryName, null, null);
         Toast.makeText(this, getString(R.string.toast_number) + contacts.get(i) + "\nSMS: " + text + getString(R.string.toast_latitude) + latitude + getString(R.string.toast_longitude) + longitude + getString(R.string.toast_address) + address + getString(R.string.toast_country) + countryName, Toast.LENGTH_LONG).show();
     }
 }else{
