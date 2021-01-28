@@ -10,9 +10,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="65dp"
         android:text="@string/enter_message"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,53 +29,37 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="@string/message"
         android:inputType="textMultiLine"
+        android:maxLength="80"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/save"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/btn_save"
-        app:layout_constraintEnd_toEndOf="@+id/load"
-        app:layout_constraintStart_toStartOf="@+id/load"
-        app:layout_constraintTop_toBottomOf="@+id/message" />
-
-    <Button
-        android:id="@+id/load"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/btn_load"
-        app:layout_constraintEnd_toEndOf="@+id/btnContacts"
-        app:layout_constraintStart_toStartOf="@+id/btnContacts"
-        app:layout_constraintTop_toBottomOf="@+id/save" />
-
-    <Button
-        android:id="@+id/btnContacts"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/add_from_contacts"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/btn_save"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/load" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnMyContacts"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/conf_counter"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/my_contacts"
-        app:layout_constraintEnd_toEndOf="@+id/btnContacts"
-        app:layout_constraintStart_toStartOf="@+id/btnContacts"
-        app:layout_constraintTop_toBottomOf="@+id/btnContacts" />
+        android:text="Counter"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

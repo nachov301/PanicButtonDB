@@ -4,7 +4,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="menutitle_addTask">Add Task</string>
+    <string name="menutitle_addTask">Add contact manually</string>
     <string name="menumain_showDurations">Durations Report</string>
     <string name="menumain_settings">Settings</string>
     <string name="menumain_showAbout">About TaskTimer</string>
@@ -18,11 +18,12 @@
     <string name="addedit_save_hint">Save</string>
     <string name="title_activity_add_edit">Panic button</string>
     <string name="instructions_heading">Instructions</string>
-    <string name="instructions">Use the add button (+) in the toolbar above to create a new contact.  Contacts with lower sort order will be placed higher up in the list, Contacts with the same sort order will be sorted alphabetically.  Each contact has Edit and Delete buttons if you want to change the details or want to delete the contact</string>
+    <string name="instructions">Use the button on the upper right hand corner of the screen to start adding contacts manually or from your personal contacts. Contacts with lower sort order will be placed higher up in the list, Contacts with the same sort order will be sorted alphabetically.  Each contact has Edit and Delete buttons if you want to change the details or want to delete the contact</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="deldiag_positive_caption">Delete</string>
-    <string name="deldiag_message">Delete contact id %1$d: %2$s. ?</string>
+    <!--    <string name="deldiag_message">Delete contact id %1$d: %2$s. ?</string>-->
+    <string name="deldiag_message">Are you sure you want to delete %2$s ?</string>
     <string name="cancelEditDiag_message">You have unsaved changes. Do you want to abandon your changes or continue editing?</string>
     <string name="cancelEditDiag_positive_caption">Continue editing</string>
     <string name="cancelEditDiag_negative_caption">Abandon changes</string>
@@ -31,27 +32,26 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="configure">Configure</string>
     <string name="add_widget">Add widget</string>
-    <string name="title_activity_main3">Panic button</string>
-    <string name="add_from_contacts">Add contacts</string>
+    <string name="title_activity_main3">Contacts</string>
+    <string name="add_from_contacts">Add from my contacts</string>
     <string name="btn_save">Save</string>
     <string name="btn_load">Load</string>
     <string name="enter_message">Enter your message</string>
     <string name="enter_number">Enter your number</string>
     <string name="btn_red">Push</string>
-    <string name="btn_config">Config</string>
+    <string name="btn_config">Custom message</string>
     <string name="title_activity_widget">WidgetActivity</string>
-    <string name="diag_message">For using this app you need to enable your GPS, do you want to enable it now?</string>
+    <string name="diag_message">For using this app you need to turn on your GPS and enable high accuracy location, do you want to turn it on now?</string>
     <string name="diag_settings">Go to settings</string>
     <string name="address">Address</string>
-    <string name="country_name">Country name</string>
     <string name="longitude">Longitude</string>
     <string name="latitude">Latitude</string>
     <string name="save">Save</string>
     <string name="contacts_added">Contacts added</string>
     <string name="successfully_saved">Data successfully saved</string>
     <string name="permission_denied">Permission denied</string>
-    <string name="latitude2">Latidude:</string>
-    <string name="longitude2">Longitude:</string>
+    <string name="latitude2">"LAT: "</string>
+    <string name="longitude2">"LNG: "</string>
     <string name="countryName2">Country name:</string>
     <string name="address2">Address:</string>
     <string name="LocationEnabled">location is enabled</string>
@@ -59,7 +59,7 @@
     <string name="Number">Message sent to: </string>
     <string name="Error">There was an error</string>
     <string name="enableLocation">Enable location and try again :(</string>
-    <string name="title_activity_config">Settings</string>
+    <string name="title_activity_config">Custom message</string>
     <string name="title_activity_my_widget" translatable="false">MyWidget</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label" translatable="false">First Fragment</string>
@@ -71,11 +71,53 @@
     <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
     <string name="stop">Stop</string>
     <string name="no_contacts">You haven\'t added any contacts yet</string>
-    <string name="toast_number">\"Number: \"</string>
+    <string name="toast_number">\"Message sent to: \"</string>
     <string name="toast_latitude">\" Latitude: \"</string>
     <string name="toast_longitude">\" Longitude: \"</string>
     <string name="toast_address">\" Address: \"</string>
     <string name="toast_country">\"Country: \"</string>
     <string name="my_contacts">My contacts</string>
-    <string name="a">\"Longitud: \"</string>
+    <string name="a">\"Longitude: \"</string>
+    <string name="not_alert">Alert</string>
+    <string name="not_messages">Sending messages...</string>
+    <string name="location_needs_on">Your GPS location needs to be on and in high accuracy for this app to work properly.</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_settings_adapter">Settings</string>
+    <string name="title_activity_config_time">Time</string>
+    <string name="Contacts">Contacts</string>
+    <string name="title_activity_set_call">Number to call</string>
+    <string name="setada_contacts">Contacts</string>
+    <string name="setada_contacts_description">Add, edit, delete, etc.</string>
+    <string name="setada_time">Time</string>
+    <string name="setada_time_description">Delay time to resend the message.</string>
+    <string name="setada_message">Message</string>
+    <string name="setada_message_description">Customize the message that you want to send to your contacts.</string>
+    <string name="setada_call">Emergency call number</string>
+    <string name="setada_call_description">Add a phone number to call in an emergency case.</string>
+    <string name="set_number_to_call_in_an_emergency">Set number to call in an emergency</string>
+    <string name="phone_number">Phone number:</string>
+    <string name="contact_name">Contact name:</string>
+    <string name="emergency_call">Emergency call</string>
+    <string name="seconds_to_repeat_sending_messages_with_location">Delay time to resend the message with location (time is in seconds).</string>
+    <string name="time_in_seconds">Time in seconds:</string>
+    <string name="message">Message:</string>
+    <string name="poplabel">Instructions</string>
+    <string name="waiting_for_location">waiting for location...</string>
+    <string name="changes_saved">Changes were successfully saved</string>
+    <string name="contact_added">\" Contact added successfully: \"</string>
+    <string name="maximum_allowed">Maximum allowed 10 contacts</string>
+    <string name="minimum_time">Time needs to be at least 20 seconds</string>
+    <string name="how_to_use_label">How to use</string>
+    <string name="country_name">Country name</string>
+    <string name="pop_about">Contacts: contains all the contacts that your custom message is going to be sent to.  \n\nTime: you can set the time (in seconds) that is going to take for your message to be resend attached with a link of your location (minimum allowed 15 seconds).   \n\nMessage: allows you to customize your message.   \n\nEmergency call number: allows you to add a phone number to call to when you press the panic button (your custom message is also going to be sent to the contacts added in the contacts menu whether this option is enabled or disabled)</string>
+    <string name="how_to_use">To use the panic button you must press the HELP button inside the app or the widget, then the app is going to make an emergency call (if configured) and show a notification meaning that is sending the messages repeatedly after X seconds. \nTo stop it you can press the STOP button from within the app or you can press the notification which is going to take you to the app so you can press the STOP button and stop it from keep sending messages.</string>
 </resources>

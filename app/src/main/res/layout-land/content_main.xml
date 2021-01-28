@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/fragment1"
-        android:name="app.iggy.panicbutton.MainActivityFragment"
+        android:name="app.iggy.panicbutton2.MainActivityFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize"

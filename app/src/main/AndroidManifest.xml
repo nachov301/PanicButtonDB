@@ -1,39 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="app.iggy.panicbutton">
+    package="app.iggy.panicbutton2">
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_SMS" />
-    <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
+        android:name="app.iggy.panicbutton2.App"
         android:allowBackup="true"
         android:icon="@mipmap/panic_btn_icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/panic_btn_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="app.iggy.panicbutton2.Pop2"
+            android:label="@string/how_to_use_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme"
+            />
         <activity
-            android:name=".WidgetActivity"
-            android:label="@string/title_activity_my_widget"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".Main3Activity"
-            android:label="@string/title_activity_main3"
-            android:parentActivityName=".Config"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".Config"
-            android:label="@string/title_activity_config"
-            android:parentActivityName=".Main2Activity"
+            android:name="app.iggy.panicbutton2.SetCall"
+            android:label="@string/title_activity_set_call"
+            android:parentActivityName="app.iggy.panicbutton2.SettingsAdapter"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Main2Activity"
+            android:name="app.iggy.panicbutton2.Pop"
+            android:label="@string/poplabel"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="app.iggy.panicbutton2.ConfigTime"
+            android:label="@string/title_activity_config_time"
+            android:parentActivityName="app.iggy.panicbutton2.SettingsAdapter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.iggy.panicbutton2.SettingsAdapter"
+            android:label="@string/title_activity_settings_adapter"
+            android:parentActivityName="app.iggy.panicbutton2.Main2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.iggy.panicbutton2.WidgetActivity"
+            android:label="@string/title_activity_my_widget"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.iggy.panicbutton2.Main3Activity"
+            android:label="@string/title_activity_main3"
+            android:parentActivityName="app.iggy.panicbutton2.Config"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.iggy.panicbutton2.Config"
+            android:label="@string/title_activity_config"
+            android:parentActivityName="app.iggy.panicbutton2.SettingsAdapter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.iggy.panicbutton2.Main2Activity"
             android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,19 +74,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddEditActivity"
-            android:label="@string/title_activity_add_edit"
-            android:parentActivityName=".MainActivity"
+            android:name="app.iggy.panicbutton2.AddEditActivity"
+            android:label="@string/Contacts"
+            android:parentActivityName="app.iggy.panicbutton2.MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="app.iggy.panicbutton.MainActivity" />
+                android:value="app.iggy.panicbutton2.MainActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".Config">
+            android:name="app.iggy.panicbutton2.MainActivity"
+            android:label="@string/Contacts"
+            android:parentActivityName="app.iggy.panicbutton2.Config"
+            android:theme="@style/AppTheme.NoActionBar">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -64,22 +97,22 @@
             <!-- </intent-filter> -->
         </activity>
 
+        <service android:name="app.iggy.panicbutton2.ExampleService" />
+
         <provider
-            android:name=".AppProvider"
-            android:authorities="app.iggy.panicbutton"
+            android:name="app.iggy.panicbutton2.AppProvider"
+            android:authorities="app.iggy.panicbutton2"
             android:exported="false" />
 
-        <receiver android:name=".MyWidget">
+        <receiver android:name="app.iggy.panicbutton2.MyWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
 
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/my_widget_info"></meta-data>
+                android:resource="@xml/my_widget_info" />
         </receiver>
-
-        <!--added this-->
     </application>
 
 </manifest>
